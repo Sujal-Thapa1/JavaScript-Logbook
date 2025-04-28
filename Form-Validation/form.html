@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form_validation.css">
+</head>
+<body>
+    <form action="#" type="form" id="form">
+        <header> Form Validation</header>
+        <div class="input-group">
+            <input type="text" required id="name">
+            <label for="Name">Name</label>
+            <div class="error">
+                <small id="name_error"> </small>
+            </div>
+        </div>
+        <div class="input-group">
+            <input type="email" required id="email">
+            <label for="Email">Email</label>
+            <div class="error">
+                <small id="email_error"> </small>
+            </div>
+        </div>
+        <div class="input-group">
+            <input type="password" required id="password">
+            <label for="Password">Password</label>
+            <div class="error">
+                <small id="password_error"> </small>
+            </div>
+        </div>
+        <div class="input-group">
+            <input type="text" required id="re_pass">
+            <label for="Re-password">Confirm Password</label>
+            <div class="error">
+                <small id="confirm_pass"> </small>
+            </div>
+        </div>
+        <div class="input-group">
+            <input type="number" required id="phone">
+            <label for="phone">Phone</label>
+            <div class="error">
+                <small id="phone_error"> </small>
+            </div>
+        </div>
+
+        <div class="bt">
+            <button id="submit" value="Submit" type="submit">Submit</button>
+        </div>
+    </form>
+
+    <script src="form_validation.js"> </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    --text-color: rgb(30, 7, 49);
+    --nav-items-box : rgb(31, 248, 230);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    margin-top: 20px;
+    background-color: rgb(100, 196, 209);
+    width: 100%;
+    color: black;
+    border-radius: 0px 0px 20px 20px;
+    
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+nav ul li{
+    text-decoration: none;
+    font-style: normal;
+}
+header{
+    padding: 10px 0px;
+    height: 30%;
+    text-align: center;
+    background: rgb(31, 248, 230);
+
+}
+header h1{
+    margin-bottom: 20px;
+}
+h2{
+    margin: 10px 0px;
+    font-size: 34px;
+}
+#Assignment{
+    margin-top: 30px;
+    height: 65%;
+    display: flex;
+    column-gap: 60px;
+}
+#Assignment h3{
+    position: relative;
+    left: 50%;
+    font-size: 35px;
+    color: rgb(24, 33, 36);
+    
+}
+.task{
+    background: rgba(101, 213, 233, 0.5);
+    margin-left: 0px;
+    margin-top: 80px;
+    box-shadow: inset;
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+}
+.task:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.task h4{
+    margin-top: 10px;
+    font-size: 25px;
+}
+.task p{
+    margin-top: 20px;
+    font-size: 26px;
+}
+.task .openProject{
+    position: relative;
+    bottom: 0px;
+    width: 120px;
+    height: 40px;
+    background: transparent;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 5px  5px rgb(26, 236, 114);
+}
