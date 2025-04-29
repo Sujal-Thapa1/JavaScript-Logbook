@@ -58,7 +58,7 @@ h2{
     margin-top: 30px;
     height: 65%;
     display: flex;
-    column-gap: 60px;
+
 }
 #Assignment h3{
     text-align: center;
@@ -67,6 +67,10 @@ h2{
     font-size: 35px;
     color: rgb(24, 33, 36);
     
+}
+.project{
+    display: flex;
+    column-gap: 60px;
 }
 .task{
     background: rgba(101, 213, 233, 0.5);
@@ -111,10 +115,20 @@ h2{
     h2 {
         font-size: 22px; 
     }
+    .project{
+        top:-380px;
+        position: relative;
+        
+    }
+    nav{
+        position: relative;
+        top: 20px;
+    }
 
     #Assignment h3{
         position: relative;
         margin: auto;
+        top: -200px;
         left: auto;
         font-size: 28px;  
     }
@@ -145,11 +159,15 @@ h2{
     h2 {
         font-size: 20px;  
     }
-
-    h3 {
+    .project{
         position: relative;
+        top: -320px;
+    }
+
+   #Assignment h3{
+        position: relative;
+        top: -140px;
         left: auto;
-        
         font-size: 24px;  
     }
 
@@ -194,10 +212,15 @@ h2{
         font-size: 18px;
     }
 
-    h3 {
+    .project{
+        position: relative;
+        top: -280px;
+    }
+
+    #Assignment h3 {
         position: relative;
         left: auto;
-        top: -20px;
+        top: -153px;
         margin: auto;
         font-size: 20px; 
     }
@@ -207,7 +230,7 @@ h2{
     }
 
     .task {
-        height: auto;
+        height: 150px;
         width: 80%;
         position: relative;
         top: -70px;
@@ -222,6 +245,8 @@ h2{
     }
 
     .task .openProject {
+        width: 100px;
+        height: 30px;
         font-size: 12px; 
     }
 }
@@ -235,12 +260,15 @@ h2{
         font-size: 16px;  
     }
 
-    h3 {
+     #Assignment h3 {
         position: relative;
         left: auto;
-        top: -50px;
+        top: -190px;
         margin: auto;
         font-size: 16px;  
+    }
+    .project{
+        display: flex;
     }
 
     nav ul {
@@ -248,10 +276,10 @@ h2{
     }
 
     .task {
-        height: auto;
+        height: 140px;
         position: relative;
         top: -106px;
-        width: 95%;  
+        width: 98%;  
     }
 
     .task h4 {
@@ -263,6 +291,8 @@ h2{
     }
 
     .task .openProject {
+        width: 70px;
+        height: 19px;
         font-size: 10px;  
     }
 }
@@ -280,9 +310,9 @@ h2{
         font-size: 12px;  
     }
 
-    h3 {
+    #Assignment h3 {
         position: relative;
-        top: 90px;
+        top: 6ch;
         left: auto;
         margin: auto;
         font-size: 16px;  
@@ -293,7 +323,7 @@ h2{
     }
 
     .task {
-        height: auto;
+        height: 130px;
         position: relative;
         width: 95%;  
     }
@@ -307,12 +337,15 @@ h2{
     }
 
     .task .openProject {
+        height: 15px;
+        width: 70px;
         font-size: 10px;  
     }
     .project{
         display: flex;
         flex-direction: column;
-        margin-top: 200px;
+        position: relative;
+        top: 100px;
     }
 }
 
