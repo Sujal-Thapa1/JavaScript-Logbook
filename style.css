@@ -251,18 +251,18 @@ h2{
         height: auto;
         position: relative;
         top: -106px;
-        width: 95%;  /* Almost full width for tasks */
+        width: 95%;  
     }
 
     .task h4 {
-        font-size: 14px;  /* Smaller font size for project titles */
+        font-size: 14px;
     }
 
     .task p {
-        font-size: 12px;  /* Smaller font size for project descriptions */
+        font-size: 12px;  
     }
 
     .task .openProject {
-        font-size: 10px;  /* Smaller font size for button text */
+        font-size: 10px;  
     }
 }
