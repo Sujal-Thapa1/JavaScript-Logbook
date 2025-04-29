@@ -54,12 +54,14 @@ h2{
     font-size: 34px;
 }
 #Assignment{
+    text-align: center;
     margin-top: 30px;
     height: 65%;
     display: flex;
     column-gap: 60px;
 }
 #Assignment h3{
+    text-align: center;
     position: relative;
     left: 50%;
     font-size: 35px;
@@ -99,4 +101,169 @@ h2{
     font-size: 15px;
     margin-top: 10px;
     box-shadow: 0px 0px 5px  5px rgb(26, 236, 114);
+}
+
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 28px;  /* Adjust header font size for medium screens */
+    }
+
+    h2 {
+        font-size: 22px;  /* Adjust subheading font size */
+    }
+
+    #Assignment h3{
+        position: relative;
+        margin: auto;
+        left: auto;
+        font-size: 28px;  /* Adjust h3 font size for medium screens */
+    }
+
+    nav ul {
+        font-size: 18px;  /* Adjust font size for navigation */
+        flex-wrap: nowrap; /* Ensure items stay in one line */
+    }
+
+    #Assignment {
+        display: flex;
+        flex-direction: column;  /* Stack projects vertically */
+        align-items: center;  /* Center align items */
+    }
+
+    .task {
+        width: 60%;
+        height: 100%;
+        margin: 20px 0;  /* Add margin between tasks */
+    }
+}
+
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 24px;  /* Further reduce header font size */
+    }
+
+    h2 {
+        font-size: 20px;  /* Further reduce subheading font size */
+    }
+
+    h3 {
+        position: relative;
+        left: auto;
+        
+        font-size: 24px;  /* Further reduce h3 font size */
+    }
+
+    nav ul {
+        flex-direction: column;  /* Stack navigation items vertically */
+        padding: 10px 0;  /* Adjust padding */
+    }
+
+    nav ul li {
+        margin: 5px 0;  /* Add margin between items */
+    }
+
+    #Assignment {
+        margin-top: 15px;  /* Adjust margin */
+    }
+
+    .task {
+        position: relative;
+        top: -30px;
+        width: 90%;  /* Full width for tasks */
+        height: auto;  /* Adjust height */
+    }
+
+    .task h4 {
+        font-size: 18px;  /* Smaller font size for project titles */
+    }
+
+    .task p {
+        font-size: 16px;  /* Smaller font size for project descriptions */
+    }
+
+    .task .openProject {
+        font-size: 14px;  /* Smaller font size for button text */
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 22px;  /* Further reduce header font size */
+    }
+
+    h2 {
+        font-size: 18px;  /* Further reduce subheading font size */
+    }
+
+    h3 {
+        position: relative;
+        left: auto;
+        top: -20px;
+        margin: auto;
+        font-size: 20px;  /* Further reduce h3 font size */
+    }
+
+    nav ul {
+        font-size: 16px;  /* Smaller font size for navigation */
+    }
+
+    .task {
+        height: auto;
+        width: 80%;
+        position: relative;
+        top: -70px;
+    }
+
+    .task h4 {
+        font-size: 16px;  /* Smaller font size for project titles */
+    }
+
+    .task p {
+        font-size: 14px;  /* Smaller font size for project descriptions */
+    }
+
+    .task .openProject {
+        font-size: 12px;  /* Smaller font size for button text */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;  /* Further reduce header font size */
+    }
+
+    h2 {
+        font-size: 16px;  /* Further reduce subheading font size */
+    }
+
+    h3 {
+        position: relative;
+        left: auto;
+        top: -50px;
+        margin: auto;
+        font-size: 16px;  /* Further reduce h3 font size */
+    }
+
+    nav ul {
+        font-size: 14px;  /* Smaller font size for navigation */
+    }
+
+    .task {
+        height: auto;
+        position: relative;
+        top: -106px;
+        width: 95%;  /* Almost full width for tasks */
+    }
+
+    .task h4 {
+        font-size: 14px;  /* Smaller font size for project titles */
+    }
+
+    .task p {
+        font-size: 12px;  /* Smaller font size for project descriptions */
+    }
+
+    .task .openProject {
+        font-size: 10px;  /* Smaller font size for button text */
+    }
 }
