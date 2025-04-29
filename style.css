@@ -240,11 +240,11 @@ h2{
         left: auto;
         top: -50px;
         margin: auto;
-        font-size: 16px;  /* Further reduce h3 font size */
+        font-size: 16px;  
     }
 
     nav ul {
-        font-size: 14px;  /* Smaller font size for navigation */
+        font-size: 14px; 
     }
 
     .task {
