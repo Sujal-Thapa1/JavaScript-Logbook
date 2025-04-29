@@ -105,94 +105,93 @@ h2{
 
 @media (max-width: 1200px) {
     header h1 {
-        font-size: 28px;  /* Adjust header font size for medium screens */
+        font-size: 28px;  
     }
 
     h2 {
-        font-size: 22px;  /* Adjust subheading font size */
+        font-size: 22px; 
     }
 
     #Assignment h3{
         position: relative;
         margin: auto;
         left: auto;
-        font-size: 28px;  /* Adjust h3 font size for medium screens */
+        font-size: 28px;  
     }
 
     nav ul {
-        font-size: 18px;  /* Adjust font size for navigation */
-        flex-wrap: nowrap; /* Ensure items stay in one line */
+        font-size: 18px;
+        flex-wrap: nowrap; 
     }
 
     #Assignment {
         display: flex;
-        flex-direction: column;  /* Stack projects vertically */
-        align-items: center;  /* Center align items */
+        flex-direction: column;
+        align-items: center;  
     }
 
     .task {
         width: 60%;
         height: 100%;
-        margin: 20px 0;  /* Add margin between tasks */
+        margin: 20px 0;  
     }
 }
 
 @media (max-width: 992px) {
     header h1 {
-        font-size: 24px;  /* Further reduce header font size */
+        font-size: 24px;  
     }
 
     h2 {
-        font-size: 20px;  /* Further reduce subheading font size */
+        font-size: 20px;  
     }
 
     h3 {
         position: relative;
         left: auto;
         
-        font-size: 24px;  /* Further reduce h3 font size */
+        font-size: 24px;  
     }
 
     nav ul {
-        flex-direction: column;  /* Stack navigation items vertically */
-        padding: 10px 0;  /* Adjust padding */
+        flex-direction: column;  
+        padding: 10px 0;  
     }
 
     nav ul li {
-        margin: 5px 0;  /* Add margin between items */
+        margin: 5px 0; 
     }
 
     #Assignment {
-        margin-top: 15px;  /* Adjust margin */
-    }
+        margin-top: 15px;      }
 
     .task {
         position: relative;
         top: -30px;
-        width: 90%;  /* Full width for tasks */
-        height: auto;  /* Adjust height */
+        width: 90%;
+        height: auto;  
     }
 
     .task h4 {
-        font-size: 18px;  /* Smaller font size for project titles */
+        font-size: 18px;
     }
 
     .task p {
-        font-size: 16px;  /* Smaller font size for project descriptions */
+        font-size: 16px; 
     }
 
     .task .openProject {
-        font-size: 14px;  /* Smaller font size for button text */
+        font-size: 14px; 
     }
 }
 
 @media (max-width: 768px) {
     header h1 {
-        font-size: 22px;  /* Further reduce header font size */
+        font-size: 22px; 
     }
 
     h2 {
-        font-size: 18px;  /* Further reduce subheading font size */
+        font-size: 18px;
     }
 
     h3 {
@@ -200,11 +199,11 @@ h2{
         left: auto;
         top: -20px;
         margin: auto;
-        font-size: 20px;  /* Further reduce h3 font size */
+        font-size: 20px; 
     }
 
     nav ul {
-        font-size: 16px;  /* Smaller font size for navigation */
+        font-size: 16px;  
     }
 
     .task {
@@ -215,25 +214,25 @@ h2{
     }
 
     .task h4 {
-        font-size: 16px;  /* Smaller font size for project titles */
+        font-size: 16px;  
     }
 
     .task p {
-        font-size: 14px;  /* Smaller font size for project descriptions */
+        font-size: 14px; 
     }
 
     .task .openProject {
-        font-size: 12px;  /* Smaller font size for button text */
+        font-size: 12px; 
     }
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 20px;  /* Further reduce header font size */
+        font-size: 20px;
     }
 
     h2 {
-        font-size: 16px;  /* Further reduce subheading font size */
+        font-size: 16px;  
     }
 
     h3 {
