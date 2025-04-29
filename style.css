@@ -266,3 +266,53 @@ h2{
         font-size: 10px;  
     }
 }
+@media (max-width: 280px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    header h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 12px;  
+    }
+
+    h3 {
+        position: relative;
+        top: 90px;
+        left: auto;
+        margin: auto;
+        font-size: 16px;  
+    }
+
+    nav ul {
+        font-size: 14px; 
+    }
+
+    .task {
+        height: auto;
+        position: relative;
+        width: 95%;  
+    }
+
+    .task h4 {
+        font-size: 14px;
+    }
+
+    .task p {
+        font-size: 12px;  
+    }
+
+    .task .openProject {
+        font-size: 10px;  
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+    }
+}
+
