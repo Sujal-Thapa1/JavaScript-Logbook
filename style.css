@@ -1,0 +1,497 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8; /* Light background for contrast */
+  color: #343a40; /* Dark text color */
+}
+
+.container {
+  max-width: 1200px; /* Limit the width for better readability */
+  margin: 50px auto; /* Center the container */
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Vibrant gradient */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 2.5em; /* Larger font size for the title */
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+header h2 {
+  font-size: 1.5em; /* Subheading size */
+  margin: 5px 0;
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: center; /* Center the navigation */
+}
+
+nav ul li {
+  margin: 0 15px; /* Space between items */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+/* Section Styles */
+section {
+  margin-top: 30px; /* Space above the section */
+}
+
+h3 {
+  text-align: center; /* Center the section title */
+  font-size: 2em; /* Section title size */
+  color: #6a11cb; /* Color for section title */
+}
+
+/* Project Styles */
+.project {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of project cards */
+  justify-content: space-between; /* Space between cards */
+}
+
+.project article {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  flex: 1 1 calc(30% - 20px); /* Responsive card width */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project article:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project h4 {
+  margin: 0 0 10px;
+  font-size: 1.5em; /* Project title size */
+  color: #6a11cb; /* Color for project titles */
+}
+
+.project p {
+  font-size: 1em; /* Project description size */
+  line-height: 1.5; /* Line height for readability */
+}
+
+/* Button Styles */
+.openProject {
+  background: #2575fc; /* Button color */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.openProject:hover {
+  background: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em; /* Smaller title on mobile */
+  }
+
+  header h2 {
+    font-size: 1.2em; /* Smaller subheading on mobile */
+  }
+
+  .project article {
+    flex: 1 1 calc(45% - 20px); /* Adjust card width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column; /* Stack navigation items on mobile */
+    align-items: center; /* Center items */
+  }
+
+  .project article {
+    flex: 1 1 100%; /* Full width cards on mobile */
+  }
+}
+/* *{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    --text-color: rgb(30, 7, 49);
+    --nav-items-box : rgb(31, 248, 230);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    margin-top: 20px;
+    background-color: rgb(100, 196, 209);
+    width: 100%;
+    color: black;
+    border-radius: 0px 0px 20px 20px;
+    
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+nav ul li{
+    text-decoration: none;
+    font-style: normal;
+}
+header{
+    padding: 10px 0px;
+    height: 30%;
+    text-align: center;
+    background: rgb(31, 248, 230);
+
+}
+header h1{
+    margin-bottom: 20px;
+}
+h2{
+    margin: 10px 0px;
+    font-size: 34px;
+}
+#Assignment{
+    text-align: center;
+    margin-top: 30px;
+    height: 65%;
+    display: flex;
+
+}
+#Assignment h3{
+    text-align: center;
+    position: relative;
+    left: 50%;
+    font-size: 35px;
+    color: rgb(24, 33, 36);
+    
+}
+.project{
+    display: flex;
+    column-gap: 60px;
+}
+.task{
+    background: rgba(101, 213, 233, 0.5);
+    margin-left: 0px;
+    margin-top: 80px;
+    box-shadow: inset;
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+}
+.task:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.task h4{
+    margin-top: 10px;
+    font-size: 25px;
+}
+.task p{
+    margin-top: 20px;
+    font-size: 26px;
+}
+.task .openProject{
+    position: relative;
+    bottom: 0px;
+    width: 120px;
+    height: 40px;
+    background: transparent;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 5px  5px rgb(26, 236, 114);
+}
+
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 28px;  
+    }
+
+    h2 {
+        font-size: 22px; 
+    }
+    .project{
+        top:-380px;
+        position: relative;
+        
+    }
+    nav{
+        position: relative;
+        top: 20px;
+    }
+
+    #Assignment h3{
+        position: relative;
+        margin: auto;
+        top: -200px;
+        left: auto;
+        font-size: 28px;  
+    }
+
+    nav ul {
+        font-size: 18px;
+        flex-wrap: nowrap; 
+    }
+
+    #Assignment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+
+    .task {
+        width: 60%;
+        height: 100%;
+        margin: 20px 0;  
+    }
+}
+
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 24px;  
+    }
+
+    h2 {
+        font-size: 20px;  
+    }
+    .project{
+        position: relative;
+        top: -320px;
+    }
+
+   #Assignment h3{
+        position: relative;
+        top: -140px;
+        left: auto;
+        font-size: 24px;  
+    }
+
+    nav ul {
+        flex-direction: column;  
+        padding: 10px 0;  
+    }
+
+    nav ul li {
+        margin: 5px 0; 
+    }
+
+    #Assignment {
+        margin-top: 15px;      }
+
+    .task {
+        position: relative;
+        top: -30px;
+        width: 90%;
+        height: auto;  
+    }
+
+    .task h4 {
+        font-size: 18px;
+    }
+
+    .task p {
+        font-size: 16px; 
+    }
+
+    .task .openProject {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 22px; 
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .project{
+        position: relative;
+        top: -280px;
+    }
+
+    #Assignment h3 {
+        position: relative;
+        left: auto;
+        top: -153px;
+        margin: auto;
+        font-size: 20px; 
+    }
+
+    nav ul {
+        font-size: 16px;  
+    }
+
+    .task {
+        height: 150px;
+        width: 80%;
+        position: relative;
+        top: -70px;
+    }
+
+    .task h4 {
+        font-size: 16px;  
+    }
+
+    .task p {
+        font-size: 14px; 
+    }
+
+    .task .openProject {
+        width: 100px;
+        height: 30px;
+        font-size: 12px; 
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;  
+    }
+
+     #Assignment h3 {
+        position: relative;
+        left: auto;
+        top: -190px;
+        margin: auto;
+        font-size: 16px;  
+    }
+    .project{
+        display: flex;
+    }
+
+    nav ul {
+        font-size: 14px; 
+    }
+
+    .task {
+        height: 140px;
+        position: relative;
+        top: -106px;
+        width: 98%;  
+    }
+
+    .task h4 {
+        font-size: 14px;
+    }
+
+    .task p {
+        font-size: 12px;  
+    }
+
+    .task .openProject {
+        width: 70px;
+        height: 19px;
+        font-size: 10px;  
+    }
+}
+@media (max-width: 280px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    header h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 12px;  
+    }
+
+    #Assignment h3 {
+        position: relative;
+        top: 6ch;
+        left: auto;
+        margin: auto;
+        font-size: 16px;  
+    }
+
+    nav ul {
+        font-size: 14px; 
+    }
+
+    .task {
+        height: 130px;
+        position: relative;
+        width: 95%;  
+    }
+
+    .task h4 {
+        font-size: 14px;
+    }
+
+    .task p {
+        font-size: 12px;  
+    }
+
+    .task .openProject {
+        height: 15px;
+        width: 70px;
+        font-size: 10px;  
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 100px;
+    }
+}
+ */

@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+
+}
+.container header{
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 40px;
+    background: rgb(30, 206, 206);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+}
+.container section .in{
+    border-radius: 20px;
+    outline: none;
+    text-align: center;
+    width: 400px;
+    font-size: 20px;
+    height: 60px;
+}
+.container .bt{
+    height: 60px;
+    width: 100px;
+    border-radius: 20px;
+    color: black;
+    background: rgb(30, 206, 206);
+}
+/* .divLeft{
+    border: 2px solid black;
+    width:50%;
+    height: 60px;
+    column-gap: 20px;
+}
+.divRight{
+    width: 50%;
+    height: 60px;
+}
+.span{
+    font-size: 25px;
+    margin: 0px 20px;
+}
+.add{
+    margin: 0px 20px;
+    height: 60px;
+    width: 120px;
+    background: blue;
+}
+.del{
+    margin: 0px 20px;
+    width: 120px;
+    height: 60px;
+} */
+ /* Style for the main container */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    padding: 20px;
+}
+
+/* Style for the divLeft container */
+.divLeft {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px;
+    margin: 10px 0; /* Space between divs */
+    width: 500px; /* Fixed width for alignment */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Style for the btnList container */
+.btnList {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Style for the checkbox */
+.divLeft input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: 20px; /* Space between checkbox and text */
+}
+
+/* Style for the buttons */
+.add, .del {
+    padding: 8px 12px; /* Padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Add specific styles for the Add button */
+.add {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+}
+
+/* Add hover effect for the Add button */
+.add:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Add specific styles for the Delete button */
+.del {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+}
+
+/* Add hover effect for the Delete button */
+.del:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+/* Style for the span */
+.span {
+    margin-left: 10px; /* Space between checkbox and text */
+    font-size: 16px; /* Font size for the text */
+}
